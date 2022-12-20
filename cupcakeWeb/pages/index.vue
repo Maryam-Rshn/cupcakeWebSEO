@@ -72,6 +72,7 @@
         </div>
       </div>
     </section>
+    <FooterCompo />
   </div>
 </template>
 
