@@ -56,6 +56,22 @@
         </div>
       </div>
     </section>
+    <section class="qouteSection">
+      <h1>What people think about our website</h1>
+      <div class="qouteContainer">
+        <div class="qouteContent">
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none"><rect width="43" height="43" fill="#FFF8EA"/><path d="M21.5 1.7915C10.1444 1.7915 0 9.36309 0 19.7207C0 23.3936 1.32225 27.0003 3.66754 29.7988C3.76608 33.0776 1.83467 37.7825 0.09675 41.2082C4.75867 40.3661 11.386 38.5063 14.3907 36.6645C30.9385 40.6904 43 30.5639 43 19.7207C43 9.30755 32.7857 1.7915 21.5 1.7915ZM21.5 19.7583C21.5 23.9455 18.7605 26.7638 14.8995 27.5252L14.1721 25.9665C15.9566 25.2946 17.105 23.1231 17.105 21.4998H14.3333V14.3332H21.5V19.7583ZM30.4583 19.7583C30.4583 23.9455 27.7189 26.7638 23.8578 27.5252L23.1304 25.9665C24.9149 25.2946 26.0634 23.1231 26.0634 21.4998H23.2917V14.3332H30.4583V19.7583Z" fill="#9E7676"/></svg>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet</p>
+          <h1>Paul Cookson</h1>
+        </div>
+        <img src="../assets/pavan 574.png" alt="">
+        <div class="qouteContent">
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none"><rect width="43" height="43" fill="#FFF8EA"/><path d="M21.5 1.7915C10.1444 1.7915 0 9.36309 0 19.7207C0 23.3936 1.32225 27.0003 3.66754 29.7988C3.76608 33.0776 1.83467 37.7825 0.09675 41.2082C4.75867 40.3661 11.386 38.5063 14.3907 36.6645C30.9385 40.6904 43 30.5639 43 19.7207C43 9.30755 32.7857 1.7915 21.5 1.7915ZM21.5 19.7583C21.5 23.9455 18.7605 26.7638 14.8995 27.5252L14.1721 25.9665C15.9566 25.2946 17.105 23.1231 17.105 21.4998H14.3333V14.3332H21.5V19.7583ZM30.4583 19.7583C30.4583 23.9455 27.7189 26.7638 23.8578 27.5252L23.1304 25.9665C24.9149 25.2946 26.0634 23.1231 26.0634 21.4998H23.2917V14.3332H30.4583V19.7583Z" fill="#9E7676"/></svg>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet</p>
+          <h1>Jacob Lett</h1>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -241,5 +257,47 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: #594545;
+}
+.qouteSection {
+  margin: 79px -118px 93px -118px;
+  background: #9E7676;
+  padding: 112px 110px 112px 110px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.qouteSection h1 {
+  font-size: 34px;
+  color: #FFF8EA;
+  margin: 0;
+}
+.qouteContainer {
+  display: flex;
+  margin-top: 53px;
+  align-items: center;
+  width: 1220px;
+  justify-content: space-between;
+  /* gap: 117px; */
+}
+.qouteContent {
+  padding: 39px 38px 41px 38px;
+  background-color: #FFF8EA;
+  border-radius: 50px;
+  color: #9E7676;
+}
+.qouteContent p {
+  margin: 29px 0 21px 0;
+  font-size: 13px;
+  line-height: 28px;
+  width: 251px;
+}
+.qouteContent h1 {
+  color: #9E7676;
+  font-size: 15px;
+}
+.qouteContainer img {
+  width: 292px;
+  height: 430px;
 }
 </style>
