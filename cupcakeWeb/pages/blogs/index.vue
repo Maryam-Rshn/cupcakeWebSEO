@@ -18,6 +18,9 @@
                 </NuxtLink>
             </div>
         </pagination>
+        <section class="footerSection">
+            <FooterCompo />
+        </section>
     </div>
 </template>
 
@@ -154,5 +157,10 @@ export default {
 .product img {
     height: 115px;
     margin-top: 35px;
+}
+.footerSection {
+    background: rgba(158, 118, 118, 0.21);
+    margin: 117px -118px -57px -118px;
+    padding: 50px 110px 50px 110px;  
 }
 </style>
