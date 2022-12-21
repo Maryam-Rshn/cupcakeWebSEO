@@ -8,12 +8,71 @@
             </div>
             <img src="../../assets/Illustration - Searching - Looking.png" alt="">
         </section>
+        <Pagination :perPage="perPage" :totalPages="totalPages" :currentPage= "currentPage" @pagechanged="onPageChange">
+            <div v-for="product in newProducts" :key="product.id">
+                <NuxtLink :to="{name: 'blogs-id', params: {id: product.id } }" class="nuxtLink">
+                    <div class="product">
+                        <img :src="link + product.imageUrl" alt="">
+                        <h2>{{product.title}}</h2>
+                    </div>
+                </NuxtLink>
+            </div>
+        </pagination>
     </div>
 </template>
 
 <script>
-export default {
+import Pagination from '~/components/Pagination.vue';
 
+export default {
+    
+    components: { Pagination },
+    data() {
+        return {
+            link: "http://localhost:1337",
+            totalItems: null,
+            perPage: 3,
+            totalPages: null,
+            currentPage: 1,
+            newProducts: [],
+            // pageUnderEdit: null,
+        };
+    },
+    computed: {
+        products() {
+            return this.$store.state.test.products;
+        }
+    },
+    async fetch() {
+        await this.$store.dispatch("test/getProductData");
+    },
+    methods: {
+        onPageChange(page) {
+            this.currentPage = page;
+            this.$router.push({path: this.$route.path, query: { page: this.currentPage }})
+            localStorage.setItem('currentPage', JSON.stringify(this.currentPage))
+            this.pickProducts(this.currentPage, this.perPage)  
+        },
+        pickProducts(page, limit) {
+            this.newProducts = []
+            const start = (page-1) * limit
+            const picker = page * limit
+            for(let i = start; i < picker; i++) {
+                this.newProducts.push(this.products[i])
+            }
+        }
+    },
+
+    mounted() {
+        this.totalItems = this.products.length
+        console.log(this.totalItems, 'this is total items');
+        this.totalPages = Math.ceil(this.totalItems / this.perPage)
+        if(localStorage.getItem('currentPage')) {
+            this.currentPage = JSON.parse(localStorage.getItem('currentPage'))
+            this.$router.push({path: this.$route.path, query: { page: this.currentPage }})
+        }
+        this.pickProducts(this.currentPage, this.perPage)
+    }
 }
 </script>
 
@@ -64,5 +123,36 @@ export default {
 }
 .blogsHeroSection img {
     margin-top: -34px;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 199px;
+    height: 242px;
+    background: rgba(158, 118, 118, 0.33);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.28);
+    border-radius: 33px;
+    position: relative;
+    align-items: center;
+    gap: 40px;
+}
+.product::after {
+    position: absolute;
+    content: '';
+    height: 57px;
+    width: 198px;
+    border-radius: 33px;
+    background: rgba(158, 118, 118, 0.17);
+    bottom: 0;
+    left: 0;
+}
+.product h2 {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+}
+.product img {
+    height: 115px;
+    margin-top: 35px;
 }
 </style>
