@@ -26,6 +26,56 @@
             </div>
         </div>
     </section>
+    <section class="ourTeamSection">
+        <div class="ourTeamHeader">
+            <h1>Meet</h1>
+            <h2>Our Team</h2>
+        </div>
+        <div class="teamMembers">
+            <div class="member">
+                <img src="../../assets/head1.png" alt="">
+                <div class="memberNameandPosition">
+                    <h1>Samuel</h1>
+                    <p>Founder</p>
+                </div>
+            </div>
+            <div class="member">
+                <img src="../../assets/head2.png" alt="">
+                <div class="memberNameandPosition">
+                    <h1>Caroline</h1>
+                    <p>VP of Content</p>
+                </div>
+            </div>
+            <div class="member">
+                <img src="../../assets/head3.png" alt="">
+                <div class="memberNameandPosition">
+                    <h1>Emily</h1>
+                    <p>CEO</p>
+                </div>
+            </div>
+            <div class="member">
+                <img src="../../assets/head4.png" alt="">
+                <div class="memberNameandPosition">
+                    <h1>Geoffrey</h1>
+                    <p>President</p>
+                </div>
+            </div>
+            <div class="member">
+                <img src="../../assets/head5.png" alt="">
+                <div class="memberNameandPosition">
+                    <h1>Denis</h1>
+                    <p>Webdesigner</p>
+                </div>
+            </div>
+            <div class="member">
+                <img src="../../assets/head6.png" alt="">
+                <div class="memberNameandPosition">
+                    <h1>Leslie</h1>
+                    <p>Social Media Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
   </div>
 </template>
 
@@ -100,5 +150,47 @@ export default {
     display: flex;
     margin-top: 8px;
     gap: 20px;
+}
+.ourTeamSection {
+    margin: 90px 0 145px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ourTeamHeader {
+    position: relative;
+}
+.ourTeamHeader h1 {
+    left: -60px;
+}
+.teamMembers {
+    margin-top: 100px;
+    display: flex;
+    flex-flow: wrap;
+    gap: 144px;
+}
+.member {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.memberNameandPosition {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    align-items: center;
+    width: 150px;
+}
+.memberNameandPosition h1 {
+    font-size: 28px;
+    color: #9E7676;
+    text-align: center;
+    margin: 0;
+}
+.memberNameandPosition p {
+    font-size: 19px;
+    color: #594545;
+    text-align: center;
+    margin: 0;
 }
 </style>
