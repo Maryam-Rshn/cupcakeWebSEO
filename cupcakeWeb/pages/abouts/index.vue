@@ -76,6 +76,9 @@
             </div>
         </div>
     </section>
+    <section class="footerSection">
+        <FooterCompo />
+    </section>
   </div>
 </template>
 
