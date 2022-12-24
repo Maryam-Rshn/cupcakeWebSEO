@@ -4,7 +4,7 @@
     <section class="heroSection">
       <div>
         <h2>the ultimate cupcake baking guide</h2>
-        <h1>Make people smile, with cupcakes.</h1>
+        <h1>Make people smile, with <span>cupcakes.</span></h1>
         <NuxtLink to="/blogs">
           <button>recipe for cupcakes</button>
         </NuxtLink>
@@ -142,6 +142,14 @@ button {
   font-weight: 700;
   margin: 15px 0 151px;
   width: 651px;
+}
+.heroSection h1 span {
+  position: relative;
+}
+.heroSection h1 span::before {
+  content: url(../assets/underLine.svg);
+  position: absolute;
+  top: 85px;
 }
 .heroSection button {
   background-color: #9E7676;
