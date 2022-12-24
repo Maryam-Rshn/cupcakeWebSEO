@@ -154,6 +154,12 @@ export default {
     margin-top: 8px;
     gap: 20px;
 }
+.icons svg {
+    cursor: pointer;
+}
+.icons svg g path:hover {
+    fill: #ab9292;
+}
 .ourTeamSection {
     margin: 90px 0 145px 0;
     display: flex;

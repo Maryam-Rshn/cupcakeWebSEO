@@ -158,6 +158,14 @@ export default {
     height: 115px;
     margin-top: 35px;
 }
+.product:hover::after {
+    background: #594545;
+    background-size: contain;
+    content: url(../../assets/searchIcon.svg);
+    position: absolute;
+    top: 0;
+    padding: 92px 0 92px 0;
+}
 .footerSection {
     background: rgba(158, 118, 118, 0.21);
     margin: 117px -118px -57px -118px;

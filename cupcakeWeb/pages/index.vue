@@ -112,6 +112,9 @@ body {
   background-color: #FFF8EA;
   font-family: Poppins;
 }
+button {
+  cursor: pointer;
+}
 .container {
   margin: 0;
   background-color: #FFF8EA;
@@ -146,6 +149,10 @@ body {
   font-size: 23px;
   font-family: Poppins;
   border: 1px solid transparent;
+}
+.heroSection button:hover {
+  background-color: rgba(158, 118, 118, 0.21);
+  color: #9E7676;
 }
 .heroSection {
   margin-right: -60px;
@@ -268,6 +275,9 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: #594545;
+}
+.service button:hover {
+  color: #9E7676;
 }
 .qouteSection {
   margin: 79px -118px 93px -118px;
