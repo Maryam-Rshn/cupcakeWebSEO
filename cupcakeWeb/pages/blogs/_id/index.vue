@@ -8,6 +8,7 @@
         <p>{{products[index].content}}</p>
       </div>
     </div>
+    <FooterCompo />
   </div>
 </template>
 
