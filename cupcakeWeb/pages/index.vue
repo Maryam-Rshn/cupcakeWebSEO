@@ -5,7 +5,9 @@
       <div>
         <h2>the ultimate cupcake baking guide</h2>
         <h1>Make people smile, with cupcakes.</h1>
-        <button>recipe for cupcakes</button>
+        <NuxtLink to="/blogs">
+          <button>recipe for cupcakes</button>
+        </NuxtLink>
       </div>
       <img src="../assets/heroPic.png" alt="" width="518px" height="474px">
     </section>

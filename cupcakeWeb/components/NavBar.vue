@@ -16,7 +16,9 @@
             <p>about us</p>
           </NuxtLink>
         </div>
-        <button class="navButton">start baking</button>
+        <NuxtLink to="/blogs" class="navLink">
+          <button class="navButton">start baking</button>
+        </NuxtLink>
       </div>
     </nav>
 </template>
