@@ -15,7 +15,9 @@
         <div class="slides" v-for="product in products" :key="product.id">
           <NuxtLink :to="{name: 'blogs-id', params: {id: product.id } }" class="nuxtLink">
             <div class="carouselDataContainer">
-              <img :src="link + product.imageUrl" alt="">
+              <div class="carouselImage">
+                <img :src="link + product.imageUrl" alt="">
+              </div>
               <h2>{{product.title}}</h2>
             </div>
           </NuxtLink>
@@ -183,9 +185,17 @@ body {
   color: #FFF8EA;
   text-align: center;
 }
-.carouselDataContainer img {
+.carouselImage {
   height: 206px;
-  width: 206px;
+  width:206px;
+  background-color: #FFF8EA;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carouselDataContainer img {
+  height: 107px;
   border-radius: 50%;
 }
 .carouselDataContainer h2 {
