@@ -45,7 +45,7 @@
         calculateInnerPosition( decrease ) {
           if ( decrease ) {
             if ( this.optionsObject.loop && this.innerPosition <= 0 ) {
-              this.innerPosition = this.innerWidth - (this.slideWidth * this.optionsObject.itemsPerSlide);  
+              this.innerPosition = this.innerWidth - (this.slideWidth * this.optionsObject.itemsPerStep);  
             } else if ( this.innerPosition > 0 ){
               this.innerPosition -= this.stepSize;
             }
