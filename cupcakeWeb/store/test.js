@@ -1,5 +1,3 @@
-import axios from "axios";
-
 
 export const state = () =>({
     products: []
@@ -23,11 +21,13 @@ export const mutations = {
 export const actions = {
     async getProductData({ commit }) {
       try{
-        // const pageSize = 1;
-        const response = await axios.get('http://localhost:1337/api/products?populate=*');
-        const content = response.data.data;
-        // const count = content.length;
-        // const totalPage = Math.ceil(count / pageSize)
+        const url = 'http://localhost:1337/api/products?populate=*';
+        const options = {
+          method: "GET"
+        }; 
+        const response = await fetch(url, options);
+        const json = await response.json();
+        const content = json.data;
         commit("setProductData", content)
       } catch(error) {
         throw error
