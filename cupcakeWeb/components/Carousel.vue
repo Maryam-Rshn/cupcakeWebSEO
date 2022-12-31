@@ -14,7 +14,7 @@
         </button>
       </div>
       <div class="carousel-dots-wrapper" ref="dotsWrapper">
-        <button v-for='index in this.numberOfDots' :key='index' :class="[ 'carousel-dot', `step-${index}` ]" :step="index" @click='switchToStep(index)'></button>
+        <span v-for='index in this.numberOfDots' :key='index' :class="[ 'carousel-dot', `step-${index}` ]" :step="index" @click='switchToStep(index)'></span>
       </div>
     </div>
   </template>

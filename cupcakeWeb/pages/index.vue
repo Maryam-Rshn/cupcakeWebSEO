@@ -9,7 +9,9 @@
           <button>recipe for cupcakes</button>
         </NuxtLink>
       </div>
-      <img src="../assets/heroPic.png" alt="" width="518px" height="474px">
+      <picture>
+        <img src="../assets/heroPic.png" alt="chocolate cupcake" width="518px" height="474px">
+      </picture>
     </section>
     <section class="carouselSection">
       <h1>our most popular cupcakes</h1>
@@ -18,7 +20,9 @@
           <NuxtLink :to="{name: 'blogs-id', params: {id: product.id } }" class="nuxtLink">
             <div class="carouselDataContainer">
               <div class="carouselImage">
-                <img :src="link + product.imageUrl" alt="">
+                <picture>
+                  <img :src="link + product.imageUrl" alt="Delicious cupcake">
+                </picture>
               </div>
               <h2>{{product.title}}</h2>
             </div>
@@ -32,28 +36,36 @@
       <div class="servicesContainer">
         <div class="service">
           <div class="iconContainer">
-            <img class="pastryIcon" src="../assets/pastryBag.png" alt="">
+            <picture>
+              <img class="pastryIcon" src="../assets/pastryBag.png" alt="Pastry Bag icon">
+            </picture>
           </div>
           <p>Best cupcake decorating ideas</p>
           <button>Read More</button>
         </div>
         <div class="service">
           <div class="iconContainer">
-            <img class="icon" src="../assets/iconmonstr-time-19-240.png" alt="">
+            <picture>
+              <img class="icon" src="../assets/iconmonstr-time-19-240.png" alt="Time icon">
+            </picture>
           </div>
           <p>Quick and Easy  Cupcake Recipe</p>
           <button>Read More</button>
         </div>
         <div class="service">
           <div class="iconContainer">
-            <img class="icon" src="../assets/iconmonstr-shopping-cart-thin-240.png" alt="">
+            <picture>
+              <img class="icon" src="../assets/iconmonstr-shopping-cart-thin-240.png" alt="Shopping Cart icon">
+            </picture>
           </div>
           <p>Using Ingredients that are Easy to Access</p>
           <button>Read More</button>
         </div>
         <div class="service">
           <div class="iconContainer">
-            <img class="icon" src="../assets/iconmonstr-medal-6-240.png" alt="">
+            <picture>
+              <img class="icon" src="../assets/iconmonstr-medal-6-240.png" alt="Medal icon">
+            </picture>
           </div>
           <p>Award winning cupcake recipes</p>
           <button>Read More</button>
@@ -68,7 +80,9 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet</p>
           <h1>Paul Cookson</h1>
         </div>
-        <img src="../assets/pavan 574.png" alt="">
+        <picture>
+          <img src="../assets/pavan 574.png" alt="Woman Working On Laptop">
+        </picture>
         <div class="qouteContent">
           <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none"><rect width="43" height="43" fill="#FFF8EA"/><path d="M21.5 1.7915C10.1444 1.7915 0 9.36309 0 19.7207C0 23.3936 1.32225 27.0003 3.66754 29.7988C3.76608 33.0776 1.83467 37.7825 0.09675 41.2082C4.75867 40.3661 11.386 38.5063 14.3907 36.6645C30.9385 40.6904 43 30.5639 43 19.7207C43 9.30755 32.7857 1.7915 21.5 1.7915ZM21.5 19.7583C21.5 23.9455 18.7605 26.7638 14.8995 27.5252L14.1721 25.9665C15.9566 25.2946 17.105 23.1231 17.105 21.4998H14.3333V14.3332H21.5V19.7583ZM30.4583 19.7583C30.4583 23.9455 27.7189 26.7638 23.8578 27.5252L23.1304 25.9665C24.9149 25.2946 26.0634 23.1231 26.0634 21.4998H23.2917V14.3332H30.4583V19.7583Z" fill="#9E7676"/></svg>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet</p>
@@ -82,6 +96,16 @@
 
 <script>
 export default {
+  head: {
+    title: 'Cupcake',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Our Most Popular Cupcake Flavors'
+      }
+    ]
+  },
   name: 'IndexPage',
   data() {
     return {

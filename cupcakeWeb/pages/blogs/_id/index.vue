@@ -2,7 +2,9 @@
   <div class="container">
     <NavBar />
     <div class="cupcakeRecipe">
-      <img :src="'http://localhost:1337' + products[index].imageUrl" alt="">
+      <picture>
+        <img :src="'http://localhost:1337' + products[index].imageUrl" alt="Delicious cupcake">
+      </picture>
       <div class="recipeContent">
         <h1>{{products[index].title}}</h1>
         <p>{{products[index].content}}</p>
@@ -14,6 +16,16 @@
 
 <script>
 export default {
+  head: {
+    title: 'Cupcake|SingleBlog',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Cupcake Recipe'
+      }
+    ]
+  },
   computed: {
     products() {
         return this.$store.state.test.products;
