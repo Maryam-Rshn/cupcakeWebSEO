@@ -2,7 +2,6 @@
   <div class="container">
     <NavBar />
     <section class="heroSection">
-      hi
       <div>
         <h2>the ultimate cupcake baking guide</h2>
         <h1>Make people smile, with <span>cupcakes.</span></h1>
