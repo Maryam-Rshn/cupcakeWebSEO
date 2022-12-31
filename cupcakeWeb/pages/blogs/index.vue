@@ -6,13 +6,17 @@
                 <h1>Here you can see different types of Cupcake.</h1>
                 <h2>Click on them to see the recipe</h2>
             </div>
-            <img src="../../assets/Illustration - Searching - Looking.png" alt="">
+            <picture>
+                <img src="../../assets/Illustration - Searching - Looking.png" alt="Boy with a Magnet">
+            </picture>
         </section>
         <Pagination :perPage="perPage" :totalPages="totalPages" :currentPage= "currentPage" @pagechanged="onPageChange">
             <div v-for="product in newProducts" :key="product.id">
                 <NuxtLink :to="{name: 'blogs-id', params: {id: product.id } }" class="nuxtLink">
                     <div class="product">
-                        <img :src="link + product.imageUrl" alt="">
+                        <picture>
+                            <img :src="link + product.imageUrl" alt="Delicious cupcake">
+                        </picture>
                         <h2>{{product.title}}</h2>
                     </div>
                 </NuxtLink>

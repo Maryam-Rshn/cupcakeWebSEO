@@ -3,7 +3,9 @@
     <NavBar />
     <section class="aboutusHeroSection">
         <div class="ourStoryContainer">
-            <img src="../../assets/About.png" alt="">
+            <picture>
+                <img src="../../assets/About.png" alt="Man Waving Hand">
+            </picture>
             <div class="ourStoryContent">
                 <h1 class="transparentTitle">About</h1>
                 <h2>Our Story</h2>
@@ -11,7 +13,9 @@
             </div>
         </div>
         <div class="contactUsContainer">
-            <img src="../../assets/contact.png" alt="">
+            <picture>
+                <img src="../../assets/contact.png" alt="Woman Texting">
+            </picture>
             <div class="contactUsContent">
                 <h1 class="transparentTitle">contact</h1>
                 <h2>Reach us here</h2>
@@ -33,42 +37,54 @@
         </div>
         <div class="teamMembers">
             <div class="member">
-                <img src="../../assets/head1.png" alt="">
+                <picture>
+                    <img src="../../assets/head1.png" alt="Man Head icon">
+                </picture>
                 <div class="memberNameandPosition">
                     <h1>Samuel</h1>
                     <p>Founder</p>
                 </div>
             </div>
             <div class="member">
-                <img src="../../assets/head2.png" alt="">
+                <picture>
+                    <img src="../../assets/head2.png" alt="Woman Head icon">
+                </picture>
                 <div class="memberNameandPosition">
                     <h1>Caroline</h1>
                     <p>VP of Content</p>
                 </div>
             </div>
             <div class="member">
-                <img src="../../assets/head3.png" alt="">
+                <picture>
+                    <img src="../../assets/head3.png" alt="Woman Head icon">
+                </picture>
                 <div class="memberNameandPosition">
                     <h1>Emily</h1>
                     <p>CEO</p>
                 </div>
             </div>
             <div class="member">
-                <img src="../../assets/head4.png" alt="">
+                <picture>
+                    <img src="../../assets/head4.png" alt="Man Head icon">
+                </picture>
                 <div class="memberNameandPosition">
                     <h1>Geoffrey</h1>
                     <p>President</p>
                 </div>
             </div>
             <div class="member">
-                <img src="../../assets/head5.png" alt="">
+                <picture>
+                    <img src="../../assets/head5.png" alt="Man Head icon">
+                </picture>
                 <div class="memberNameandPosition">
                     <h1>Denis</h1>
                     <p>Webdesigner</p>
                 </div>
             </div>
             <div class="member">
-                <img src="../../assets/head6.png" alt="">
+                <picture>
+                    <img src="../../assets/head6.png" alt="Woman Head icon">
+                </picture>
                 <div class="memberNameandPosition">
                     <h1>Leslie</h1>
                     <p>Social Media Manager</p>

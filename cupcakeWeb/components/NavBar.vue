@@ -1,7 +1,9 @@
 <template>
   <nav>
       <div class="logo">
-        <img src="../assets/logoImage.png">
+        <picture>
+          <img src="../assets/logoImage.png" alt="Logo Cupcake Image">
+        </picture>
         <p>Cupcakes</p>
       </div>
       <div class="navContent">
