@@ -14,6 +14,16 @@
 
 <script>
 export default {
+  head: {
+    title: 'Cupcake|SingleBlog',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Cupcake Recipe'
+      }
+    ]
+  },
   computed: {
     products() {
         return this.$store.state.test.products;

@@ -82,6 +82,16 @@
 
 <script>
 export default {
+  head: {
+    title: 'Cupcake',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Our Most Popular Cupcake Flavors'
+      }
+    ]
+  },
   name: 'IndexPage',
   data() {
     return {

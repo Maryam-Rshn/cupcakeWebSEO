@@ -28,7 +28,16 @@
 import Pagination from '~/components/Pagination.vue';
 
 export default {
-    
+    head: {
+        title: 'Cupcake|Blogs',
+        meta: [
+            {
+                hid: 'description',
+                name: 'description',
+                content: 'Full List of Cupcake Flavors'
+            }
+        ]
+    },
     components: { Pagination },
     data() {
         return {

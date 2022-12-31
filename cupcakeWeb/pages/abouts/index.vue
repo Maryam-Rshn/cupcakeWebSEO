@@ -84,7 +84,16 @@
 
 <script>
 export default {
-
+    head: {
+        title: 'Cupcake|AboutUs',
+        meta: [
+        {
+            hid: 'description',
+            name: 'description',
+            content: 'About Us - Get in Touch'
+        }
+        ]
+    },
 }
 </script>
 
